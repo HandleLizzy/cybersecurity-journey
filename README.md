@@ -1,2 +1,1 @@
-# cybersecurity-journey
-Documenting my hands-on journey into cybersecurity through labs, projects, and security learning.
+Documenting my transition into cybersecurity through hands-on labs, practical projects, and continuous learning.
