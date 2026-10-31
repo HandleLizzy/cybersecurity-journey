@@ -138,3 +138,60 @@ Practical investigation findings will be documented here as I complete the TryHa
 **Learning Platform:** TryHackMe
 
 **Focus:** Phishing Detection, Email Analysis and SOC Investigation.v &#x20;
+
+
+## Practical Investigation 01: Email Header Analysis
+
+**Platform:** TryHackMe  
+**Task:** Email Headers  
+**Email subject:** Help protect your budget by protecting your home  
+**Date in email:** 21 June 2021
+
+### Objective
+Examine a raw email source to identify sender information, email routing details, authentication results and potentially suspicious indicators.
+
+### Evidence Collected
+
+| Field | Observed Value |
+|---|---|
+| From | newsletters@ant.anki-tech.com |
+| Display Name | ADT Security Services |
+| Recipient | alexa@yahoo.com |
+| Reply-To | reply@ant.anki-tech.com |
+| Originating IP | 43.255.56.161 |
+| Sending Host | smtp3-160.piican.com |
+| SPF | Pass |
+| DKIM | Pass |
+| DMARC | Pass |
+
+### Observations
+
+1. The display name claims to represent ADT Security Services, while the sender uses the domain ant.anki-tech.com.
+2. The originating IP address identified in the email is 43.255.56.161.
+3. SPF, DKIM and DMARC authentication checks all passed for the sending domain.
+4. The HTML email contains image references to blueoceanfresh.com.
+5. The message includes marketing click-tracking and unsubscribe links.
+
+### Preliminary Assessment
+
+The email contains domain inconsistencies that warrant further investigation. However, successful authentication indicates that the sending domain passed its configured email authentication checks.
+
+Authentication success does not establish that the message is legitimate or that the sender is authorised to represent ADT.
+
+The email cannot be conclusively classified as phishing based on the available evidence.
+
+### Next Steps
+
+- Investigate the originating IP address.
+- Examine the reputation of the sending and image-hosting domains.
+- Investigate the destinations of the tracking URLs.
+- Establish whether the sender is an authorised marketing provider for ADT.
+
+### Skills Practised
+
+- Raw email source inspection.
+- Email header analysis.
+- Sender and domain investigation.
+- SPF, DKIM and DMARC interpretation.
+- IOC identification.
+- Preliminary threat assessment.
