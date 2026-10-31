@@ -15,6 +15,7 @@ As a SOC Analyst, understanding how to identify and investigate phishing emails 
 - **Vishing:** Phishing conducted through voice calls.
 - **Business Email Compromise (BEC):** Attackers impersonate or compromise business email accounts to deceive employees.
 
+
 ## 3. Identifying Suspicious Emails
 
 Common phishing indicators include:
@@ -31,19 +32,47 @@ One indicator alone does not prove an email is malicious. Analysts must examine 
 
 ## 4. Email Header Analysis
 
-Email headers contain technical information about how an email was sent and delivered.
+### Practical Learning: Email Headers
 
-Important header fields include:
+An email consists of two main components:
 
-- **From:** Sender address displayed in the email.
-- **To:** Intended recipient.
-- **Subject:** Email subject line.
-- **Date:** Time the email was sent.
-- **Return-Path:** Address used for handling email delivery failures.
-- **Received:** Records showing the email's routing through mail servers.
-- **Message-ID:** Unique identifier assigned to an email message.
+- **Email Header:** Contains metadata about the email, including sender, recipient, subject and delivery information.
+- **Email Body:** Contains the actual message, which may include text, HTML, links and attachments.
 
-Analysing these fields can help identify suspicious sending infrastructure and possible sender spoofing.
+#### Important Email Header Fields
+
+| Header Field | Purpose |
+|---|---|
+| From | Displays the sender's email address |
+| To | Identifies the recipient |
+| Reply-To | Specifies where replies are directed |
+| Subject | Displays the email subject |
+| Date | Indicates when the email was sent |
+| Received | Records the email's delivery route |
+| Return-Path | Identifies the envelope sender |
+| Message-ID | Provides a unique email identifier |
+
+#### Viewing Raw Email Source
+
+In Thunderbird, the raw email source can be accessed through:
+
+**View → Message Source**
+
+Keyboard shortcut: `Ctrl + U`
+
+Viewing the raw source allows analysts to inspect additional technical information that may not be visible in the normal inbox.
+
+#### SOC Analyst Relevance
+
+Email header analysis helps security analysts:
+- Investigate suspicious sender information.
+- Examine email delivery routes.
+- Identify possible sender spoofing.
+- Review email authentication results.
+- Gather evidence during phishing investigations.
+
+**Practical Exercise:** TryHackMe – Phishing Analysis Fundamentals, Task 4: Email Headers.
+
 
 ## 5. Email Authentication
 
