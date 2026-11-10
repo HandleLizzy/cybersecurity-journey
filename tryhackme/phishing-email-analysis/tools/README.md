@@ -1,34 +1,38 @@
-# Tools Used – Phishing Email Analysis
+# Tools Used
 
-## Overview
+The following tools were used during the phishing email investigation.
 
-The following tools and platforms were used during the phishing email investigation.
-
-## 1. Thunderbird
-
-**Purpose:** Email inspection and header analysis.
+## 1. Mozilla Thunderbird
 
 Used to:
-- Inspect the suspicious email.
-- Review sender and recipient information.
-- Examine email headers.
-- Observe how remote content was handled.
+- Review the original email.
+- Inspect sender and recipient information.
+- Access and examine the email headers.
+- Observe that remote content was blocked.
 
 ## 2. VirusTotal
 
-**Purpose:** Threat intelligence and indicator investigation.
+Used to review:
+- Sender domain: `ant.anki-tech.com`
+- Promotional tracking URL.
+- Image-hosting domain: `blueoceanfresh.com`
 
-Used to:
-- Investigate the sender domain.
-- Examine the available URL indicators.
-- Review security vendor detection results.
+The detection results are documented in the investigation report.
+
+Website: https://www.virustotal.com/
 
 ## 3. TryHackMe
 
-**Purpose:** Practical cybersecurity learning and investigation guidance.
+Used as the learning environment for practising phishing email analysis concepts and investigation techniques.
 
-Used as the learning environment for phishing email analysis concepts and investigation techniques.
+Website: https://tryhackme.com/
 
-## Conclusion
+## 4. GitHub
 
-These tools supported the investigation by providing email inspection capabilities and threat intelligence information.
+Used to document the investigation, organise indicators, store screenshots and maintain the cybersecurity portfolio.
+
+Website: https://github.com/
+
+## Investigation Approach
+
+The tools were used to examine available email evidence and document findings. No suspicious links were opened directly during the investigation.
