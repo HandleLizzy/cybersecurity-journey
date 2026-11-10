@@ -1,15 +1,27 @@
 # Screenshots – Phishing Email Analysis
 
-This folder contains supporting screenshots captured during the phishing email investigation.
+This folder contains supporting visual evidence captured during the phishing email investigation.
 
-## Evidence
+## 1. Original Email
 
-1. **01-original-email.png** – Original email received, displaying the sender information, subject and promotional content.
-2. **02-email-headers.png** – Email header analysis, including sender and routing information.
-3. **03-virustotal-domain.png** – VirusTotal reputation results for the sender domain `ant.anki-tech.com`.
-4. **04-virustotal-url.png** – VirusTotal analysis of the promotional tracking URL.
-5. **05-virustotal-image-domain.png** – VirusTotal reputation results for the image-hosting domain `blueoceanfresh.com`.
+![Original Email](01-original-email.png)
+
+## 2. Email Headers
+
+![Email Headers](02-email-headers.png)
+
+## 3. VirusTotal – Sender Domain
+
+![VirusTotal Domain](03-virustotal-domain.png)
+
+## 4. VirusTotal – Promotional URL
+
+![VirusTotal URL](04-virustotal-url.png)
+
+## 5. VirusTotal – Image-Hosting Domain
+
+![VirusTotal Image Domain](05-virustotal-image-domain.png)
 
 ## Notes
 
-The screenshots support the investigation findings documented in the project report. VirusTotal results showed no detections at the time of review. These results do not independently establish that the email or associated resources are safe.
+The screenshots support the investigation findings documented in the project report. VirusTotal returned zero detections for the assessed resources at the time of review. This does not independently establish that the email or associated resources are safe.
