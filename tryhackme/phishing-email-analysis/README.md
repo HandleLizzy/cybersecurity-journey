@@ -2,52 +2,36 @@
 
 ## Project Overview
 
-A practical phishing email investigation involving an ADT-themed promotional email.
+This project documents a phishing email analysis exercise based on an ADT-themed promotional email received on 21 June 2021.
 
-This project demonstrates a structured SOC investigation process, covering email header analysis, authentication checks, indicator of compromise (IOC) investigation, threat intelligence and available sandbox evidence.
+The investigation involved examining email headers, authentication results, sender information, URLs, associated domains and threat intelligence findings.
 
-## Investigation Objectives
+The objective was to apply practical SOC investigation techniques and document findings in a structured investigation report.
 
-- Analyse email headers and authentication results.
-- Identify and examine domains, IP addresses and URLs.
-- Investigate indicators using VirusTotal.
-- Review available sandbox analysis and behaviour.
-- Document findings and provide an evidence-based assessment.
+## Investigation Summary
 
-## Tools Used
-
-- Thunderbird
-- VirusTotal
-- TryHackMe
+| Item | Finding |
+|---|---|
+| Email Display Name | ADT Security Services |
+| Sender Domain | ant.anki-tech.com |
+| Originating IP | 43.255.56.161 |
+| SPF | PASS |
+| DKIM | PASS |
+| DMARC | PASS |
+| Overall Assessment | Inconclusive |
 
 ## Skills Demonstrated
 
 - Phishing email analysis
-- Email authentication (SPF, DKIM and DMARC)
-- IOC investigation
-- Threat intelligence
-- Security analysis and evidence assessment
-- MITRE ATT&CK awareness
-- SOC investigation documentation
+- Email header investigation
+- SPF, DKIM and DMARC interpretation
+- Indicator extraction
+- Domain and URL reputation checks
+- VirusTotal analysis
+- Evidence documentation
+- Security investigation reporting
 
-## Investigation Outcome
+## Tools Used
 
-**Assessment: Inconclusive**
-
-The available evidence was insufficient to confidently classify the email as either malicious or legitimate.
-
-## Investigation Report
-
-See the [Full Investigation Report](https://github.com/HandleLizzy/cybersecurity-journey/blob/main/tryhackme/phishing-email-analysis/investigations/README.md) for the investigation methodology, evidence, findings, conclusion and recommendations.
-
-## Project Structure
-
-- `investigations/` – Detailed investigation and analysis
-- `IOCs/` – Identified indicators
-- `reports/` – Investigation reports
-- `screenshots/` – Supporting evidence
-- `tools/` – Tools and resources used
-
----
-
-**Project Category:** Cybersecurity | SOC Analyst Portfolio
+- Mozilla Thunderbird
+-
