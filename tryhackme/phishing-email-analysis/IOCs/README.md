@@ -2,43 +2,49 @@
 
 ## Overview
 
-This document records the indicators identified during the phishing email investigation.
+This file documents the indicators extracted from the ADT-themed promotional email investigated in this project.
 
-The indicators were extracted from the available email headers and examined as part of the investigation.
+The indicators are recorded for investigation and reference purposes. Their presence does not automatically establish malicious activity.
 
-**Note:** Identified indicators are not automatically confirmed malicious.
+## 1. Email Indicators
 
-## Identified Indicators
+| Indicator Type | Value |
+|---|---|
+| Sender Email | newsletters@ant.anki-tech.com |
+| Reply-To Email | reply@ant.anki-tech.com |
+| Sender Domain | ant.anki-tech.com |
+| Originating IP Address | 43.255.56.161 |
 
-| Indicator Type | Value | Description |
-|---|---|---|
-| Sender Email | newsletters@ant.anki-tech.com | Email sender address |
-| Reply-To | reply@ant.anki-tech.com | Reply destination |
-| Domain | ant.anki-tech.com | Sender domain |
-| IP Address | 43.255.56.161 | Originating IP address |
+## 2. URL Indicator
 
-## Threat Intelligence Results
+**Main promotional tracking URL:**
 
-VirusTotal was used to investigate available indicators.
+`https://ant.anki-tech.com/ga/click/2-952622232-3970-423304-838253-590962-350694bcf9-17b3b9c21a`
+
+The URL was extracted from the original email source. Its final destination was not independently verified.
+
+## 3. Image-Hosting Domain
+
+| Indicator Type | Value |
+|---|---|
+| Domain | blueoceanfresh.com |
+| Purpose observed | Hosting images referenced in the email HTML |
+
+## 4. VirusTotal Results
 
 | Indicator | Result |
 |---|---|
-| Domain | 0/92 vendors flagged |
-| Investigated URL | 0/91 vendors flagged |
+| ant.anki-tech.com | 0/92 detections |
+| Promotional tracking URL | 0/91 detections |
+| blueoceanfresh.com | 0/92 detections |
 
-These results represent the recorded detection results at the time of investigation and do not establish that the indicators are safe.
+These are the results displayed in the VirusTotal reports reviewed during the investigation. Zero detections do not guarantee that an indicator is safe.
 
-## Assessment
+## 5. Handling and Assessment
 
-- The sender domain was identified for further investigation.
-- The originating IP address was extracted from the email headers.
-- The investigated domain and URL received no detections in the recorded VirusTotal results.
-- No indicator was conclusively established as malicious based on the available evidence.
+- Preserve these indicators as investigation evidence.
+- Do not open suspicious links directly.
+- Verify URLs in a controlled analysis environment.
+- Reassess indicators if new threat intelligence becomes available.
 
-## Limitations
-
-The exact investigated URL and its full analysis details should be retained with the supporting evidence. The originating IP address also requires further reputation analysis before any malicious classification can be made.
-
-## Conclusion
-
-The identified indicators provide useful starting points for further threat intelligence investigation. Based on the available evidence, their malicious status remains unconfirmed.
+**Overall assessment:** Inconclusive. No confirmed malicious activity was established from the available evidence.
