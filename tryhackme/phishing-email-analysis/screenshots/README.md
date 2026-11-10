@@ -1,13 +1,11 @@
 # Investigation Screenshots
 
 The following screenshots document the evidence collected during the phishing email investigation.
+## 1. Email Headers
+![Email headers](./01-email-headers.png)
 
-## 1. Original Email
-![Original email](./01-original-email.png)
-
-## 2. Email Headers
-![Email headers](./02-email-headers.png)
-
+## 2. Email Authentication
+![Email authentication](./02-email-authentication.png)
 ## 3. Sender Domain - VirusTotal
 ![Sender domain analysis](./03-virustotal-domain.png)
 
