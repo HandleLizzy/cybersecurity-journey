@@ -1,39 +1,15 @@
-# Investigation Screenshots
+# Screenshots – Phishing Email Analysis
 
-This folder contains screenshots collected during the investigation of the ADT-themed promotional email.
+This folder contains supporting screenshots captured during the phishing email investigation.
 
-The screenshots provide supporting evidence for the email header review, authentication checks and VirusTotal analysis.
+## Evidence
 
-## 1. Email Headers
+1. **01-original-email.png** – Original email received, displaying the sender information, subject and promotional content.
+2. **02-email-headers.png** – Email header analysis, including sender and routing information.
+3. **03-virustotal-domain.png** – VirusTotal reputation results for the sender domain `ant.anki-tech.com`.
+4. **04-virustotal-url.png** – VirusTotal analysis of the promotional tracking URL.
+5. **05-virustotal-image-domain.png** – VirusTotal reputation results for the image-hosting domain `blueoceanfresh.com`.
 
-![Email headers](./01-email-headers.png)
+## Notes
 
-Shows the email's routing information, originating IP address and authentication header details.
-
-## 2. Email Authentication
-
-![Email authentication](./02-email-authentication.png)
-
-Shows the SPF, DKIM and DMARC authentication results.
-
-## 3. Sender Domain Analysis
-
-![Sender domain analysis](./03-virustotal-domain.png)
-
-VirusTotal result for `ant.anki-tech.com`: 0/92 security vendors flagged the domain as malicious.
-
-## 4. Promotional URL Analysis
-
-![Promotional URL analysis](./04-virustotal-url.png)
-
-VirusTotal result for the promotional tracking URL: 0/91 security vendors flagged the URL as malicious.
-
-## 5. Image-Hosting Domain Analysis
-
-![Image-hosting domain analysis](./05-virustotal-image-domain.png)
-
-VirusTotal result for `blueoceanfresh.com`: 0/92 security vendors flagged the domain as malicious.
-
-## Evidence Note
-
-The screenshots document the results observed during this investigation. VirusTotal detection results may change over time and should not be treated as proof that an indicator is safe.
+The screenshots support the investigation findings documented in the project report. VirusTotal results showed no detections at the time of review. These results do not independently establish that the email or associated resources are safe.
